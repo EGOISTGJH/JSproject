@@ -65,6 +65,7 @@ function preparegallery() {
             return !showPic(this);//showPic(this)如果返回false，说明图片切换没有成功，则不取消onclick的默认行为（弹出新窗口）；
             // 返回true，则说明图片切换成功，则取消弹窗。
         }
+        links[i].onkeypress = links[i].onclick;
     }
 }
 //在网页加载完毕时加载多个事件处理函数
@@ -115,4 +116,4 @@ function  insertAfter(newElement,targetElement){//在目标元素后面插入新
 }
 addLoadEvent(preparegallery);
 addLoadEvent(prepareplaceholder());
-addLoadEvent(countBodyChildren());
+// addLoadEvent(countBodyChildren());
