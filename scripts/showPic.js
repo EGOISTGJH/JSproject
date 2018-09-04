@@ -25,6 +25,9 @@ function showPic(whichpic) {
 function countBodyChildren() {
     var body_element = document.getElementsByTagName("body")[0];
     alert(body_element.childNodes.length);
+    for(var i = 0; i< 10;i++){
+        alert(body_element.childNodes[i].nodeType);
+    }
 }
 // window.onload = countBodyChildren();
 // window.onload  = preparelink();
@@ -112,3 +115,4 @@ function  insertAfter(newElement,targetElement){//在目标元素后面插入新
 }
 addLoadEvent(preparegallery);
 addLoadEvent(prepareplaceholder());
+addLoadEvent(countBodyChildren());
