@@ -46,4 +46,4 @@ function displayAbbreviations() {
     //把定义列表添加到页面主体
     document.body.appendChild(dlist);
 }
-addLoadEvent(displayAbbreviations());
+addLoadEvent(displayAbbreviations);
